@@ -1,0 +1,78 @@
+* {
+  font-family: Comic Mono, monospace;
+  font-size: 15px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: 
+    linear-gradient(135deg,
+      rgba(220, 220, 220, 0.3) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(220, 220, 220, 0.3) 50%,
+      rgba(220, 220, 220, 0.3) 75%,
+      transparent 75%,
+      transparent
+    )
+    0 0 / 30px 30px,
+    rgba(240, 240, 240, 1);
+}
+
+.container {
+  position: relative;
+  background-color: #fffcf9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+  width: 250px;
+  border-radius: 1em;
+  line-height: 2.5em;
+  padding: 0 2em 1em;
+  font-size: 1.3em;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#city {
+  position: absolute;
+  top: 0.8em;
+  left: 0.3em;
+  font-size: 2.5em;
+  transform: rotate(-10deg);
+}
+
+#weather-set {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#description {
+  position: absolute;
+  top: 110px;
+  opacity: 0.3;
+  font-size: 0.8em;
+}
+
+#spacer {
+  flex-grow: 0.5;
+}
+
+#temp {
+  font-size: 2.0em;
+}
+
+#input-city {
+  border: none;
+  font-size: 0.9em;
+  text-align: center;
+}
