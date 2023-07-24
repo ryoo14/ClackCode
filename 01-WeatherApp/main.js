@@ -1,13 +1,13 @@
 import { API_KEY } from './api_key.js';
 
-const input = document.getElementById('input-city');
-
 window.addEventListener('load', () => {
   fetch(`http://api.openweathermap.org/data/2.5/weather?units=metric&q=Hagi&appid=${API_KEY}`)
     .then(response => response.json())
     .then(data => weatherData(data))
     .catch(error => console.error('Error:', error));
 });
+
+const input = document.getElementById('input-city');
 
 input.addEventListener('keydown', (event) => {
   if (event.key === "Enter") {
